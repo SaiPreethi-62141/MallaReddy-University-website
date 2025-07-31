@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MallaReddy University - CSE Department</title>
+  <link rel="icon" type="image/png" href="https://cdn.adscientificindex.com/logos/13245.png">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    header {
+      padding: 30px 50px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.05);
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 3em;
+      animation: fadeInDown 1s ease-in-out;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #ccc;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 50px;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      max-width: 600px;
+      animation: slideInLeft 1s ease-in-out;
+    }
+
+    .hero-text h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    .hero-image {
+      width: 400px;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin-right: 20px;
+      padding: 12px 24px;
+      background: #f57c00;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: background 0.3s;
+    }
+
+    .buttons a:hover {
+      background: #ff9800;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background:linear-gradient(to right, #0f2027, #203a43, #2c5364);;
+      font-size: 0.9em;
+      color: #bbb;
+    }
+
+    /* Animations */
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideInLeft {
+      from { transform: translateX(-100px); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero-image {
+        width: 90%;
+        margin-top: 30px;
+      }
+    }
+     .logo {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+     }
+  </style>
+</head>
+<body>
+   <header>
+  <div style="display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap;">
+    <img src="https://cdn.adscientificindex.com/logos/13245.png" alt="MallaReddy University Logo" class="logo">
+    <div>
+      <h1>MallaReddy University</h1>
+      <p>School of Science & Technology</p>
+    </div>
+  </div>
+</header>
+  
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Empowering Innovation in Tech</h2>
+      <p>Welcome to MallaReddy University — where innovation meets excellence. Explore a world of Artificial Intelligence, Robotics, Data Science, and more.<br><br>Malla Reddy University, Hyderabad (As per Telangana State Private Universities  Act  No. 13  of  2020,  Higher  Education  (UE)  Department 
+
+dt. 15.6.2020) was established in the year 2020 through the State Legislature Council of Telangana, Govt. of Telangana. It is offering industry-focused specialised Undergraduate and Postgraduate courses with the aim of providing Quality Higher Education on par with International standards. It persistently seeks and adopts innovative methods to improve the quality of higher education on a consistent basis.</p>
+      <div class="buttons">
+        <a href="course.html">Course Curriculum</a>
+        <a href="project.html">Student Projects</a>
+      </div>
+    </div>
+    <img src="https://image-static.collegedunia.com/public/college_data/images/campusimage/15980093471.jpg" alt="Tech Graphic" class="hero-image">
+  </section>
+
+ 
+<section style="padding: 50px; text-align: center;">
+  <h2 style="margin-bottom: 20px;">Campus Tour </h2>
+  <video width="80%" controls style="border-radius: 10px; box-shadow: 0 0 20px rgba(0,0,0,0.5);">
+    <source src="http://zeal360.co.in/360/mallareddyuniversity2/mallareddyuniversity.html" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</section>
+
+
+  <footer>
+    &copy; 2025 MallaReddy University – CSE Department 
+  </footer>
+
+</body>
+</html>

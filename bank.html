@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MallaReddy University - Fee Payment</title>
+  <link rel="icon" type="image/png" href="https://cdn.adscientificindex.com/logos/13245.png">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .payment-container {
+      background: #ffffff;
+      color: #000;
+      border-radius: 15px;
+      padding: 30px;
+      width: 90%;
+      max-width: 600px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    h2 {
+      text-align: center;
+      color: #203a43;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    button {
+      width: 100%;
+      background-color: #203a43;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 15px;
+    }
+
+    button:hover {
+      background-color: #1b2f38;
+    }
+
+    .bank-details {
+      display: none;
+      margin-top: 20px;
+      background-color: #f3f3f3;
+      padding: 20px;
+      border-radius: 10px;
+      color: #000;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    .note {
+      font-size: 0.9em;
+      color: #555;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="payment-container">
+  <h2>Fee Payment - Malla Reddy University</h2>
+
+  <input type="text" id="appId" placeholder="Enter Application ID" required>
+  <input type="text" id="name" placeholder="Enter Full Name" required>
+  <input type="number" id="amount" placeholder="Enter Amount (INR)" required>
+
+  <button onclick="showBankDetails()">View Bank Details</button>
+
+  <div class="bank-details" id="bankDetails">
+    <h3>Bank Transfer Details</h3>
+    <p><strong>Bank Name:</strong> HDFC Bank</p>
+    <p><strong>Account Name:</strong> Malla Reddy University</p>
+    <p><strong>Account Number:</strong> 123456789012</p>
+    <p><strong>IFSC Code:</strong> HDFC0001234</p>
+    <p><strong>Branch:</strong> Kompally, Hyderabad</p>
+    <div class="note">
+      ⚠️ Please use your <strong>Application ID</strong> as the **payment reference** while transferring fees. <br>
+      Email your payment proof to: <strong>accounts@mallareddyuniversity.ac.in</strong>
+    </div>
+  </div>
+</div>
+
+<script>
+  function showBankDetails() {
+    const appId = document.getElementById("appId").value.trim();
+    const name = document.getElementById("name").value.trim();
+    const amount = document.getElementById("amount").value.trim();
+
+    if (!appId || !name || !amount) {
+      alert("Please fill all the fields before proceeding.");
+      return;
+    }
+
+    document.getElementById("bankDetails").style.display = "block";
+  }
+</script>
+
+</body>
+</html>

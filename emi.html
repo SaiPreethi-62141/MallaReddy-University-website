@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MallaReddy University EMI Fee Payment</title>
+  <link rel="icon" type="image/png" href="https://cdn.adscientificindex.com/logos/13245.png">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background: white;
+      padding: 30px 40px;
+      border-radius: 20px;
+      box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+      width: 90%;
+      max-width: 600px;
+      animation: fadeIn 0.6s ease-in-out;
+    }
+
+    h2 {
+      text-align: center;
+      color: #1a2980;
+    }
+
+    label {
+      margin-top: 10px;
+      display: block;
+      font-weight: 600;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+
+    button {
+      width: 100%;
+      background: #1a2980;
+      color: white;
+      border: none;
+      padding: 14px;
+      font-size: 1em;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 15px;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #0f1e4a;
+    }
+
+    .info {
+      font-size: 0.95em;
+      color: #555;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .success-message {
+      display: none;
+      text-align: center;
+      color: green;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: scale(0.95);}
+      to {opacity: 1; transform: scale(1);}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Apply for EMI - MallaReddy University</h2>
+    <p class="info">Pay your tuition in easy installments with our partnered financial providers.</p>
+
+    <form id="emiForm">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" placeholder="Enter your full name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="studentId">Student ID / Application No:</label>
+      <input type="text" id="studentId" placeholder="E.g. MRU2025CS123" required>
+
+      <label for="program">Program Enrolled:</label>
+      <select id="program" required>
+        <option value="">-- Select Program --</option>
+        <option>B.Tech (CSE)</option>
+        <option>B.Tech (ECE)</option>
+        <option>BBA</option>
+        <option>MBA</option>
+      </select>
+
+      <label for="emiProvider">Choose EMI Provider:</label>
+      <select id="emiProvider" required>
+        <option value="">-- Select Provider --</option>
+        <option>HDFC Education Loan</option>
+        <option>Bajaj Finserv</option>
+        <option>Eduvanz</option>
+        <option>Other</option>
+      </select>
+
+      <label for="months">EMI Duration (in Months):</label>
+      <select id="months" required>
+        <option value="">-- Select Duration --</option>
+        <option>3 months</option>
+        <option>6 months</option>
+        <option>9 months</option>
+        <option>12 months</option>
+      </select>
+
+      <label for="amount">Tuition Fee Amount (₹):</label>
+      <input type="number" id="amount" placeholder="E.g. 150000" required>
+
+      <button type="button" onclick="submitEMI()">Apply for EMI</button>
+    </form>
+
+    <div id="success" class="success-message">
+      🎉 EMI Application Submitted Successfully!<br>Your EMI provider will contact you shortly.
+    </div>
+  </div>
+
+  <script>
+    function submitEMI() {
+      const form = document.getElementById("emiForm");
+      if (form.checkValidity()) {
+        document.getElementById("success").style.display = "block";
+        form.reset();
+      } else {
+        alert("Please fill out all fields correctly.");
+      }
+    }
+  </script>
+</body>
+</html>

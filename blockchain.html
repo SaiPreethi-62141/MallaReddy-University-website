@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blockchain Voting System - Student Project | MallaReddy University</title>
+    <link rel="icon" type="image/png" href="https://cdn.adscientificindex.com/logos/13245.png">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background: #f4f7fb;
+            color: #333;
+        }
+
+        header {
+            background-color: #2c3e50;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 30px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            font-size: 24px;
+            color: #1a237e;
+            margin-bottom: 10px;
+        }
+
+        .section p, .section ul {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .section ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .image {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: white;
+            margin-top: 40px;
+            border-top: 5px solid #1abc9c;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blockchain Voting System Project</h1>
+    <p>Malla Reddy University - Department of Computer Science & Engineering</p>
+</header>
+
+<div class="container">
+    <img src="data:image/png;base64,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" alt="Blockchain Voting System" class="image">
+
+    <div class="section">
+        <h2>Overview</h2>
+        <p>
+            The Blockchain Voting System is a cutting-edge student project developed by final-year CSE students at Malla Reddy University.
+            This prototype demonstrates a highly secure, transparent, and tamper-proof method of conducting elections using blockchain technology,
+            ensuring trust and integrity in the democratic process.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Objective</h2>
+        <p>
+            The project aims to eliminate election fraud, ensure voter anonymity, and increase accessibility and reliability in electoral processes.
+            By leveraging the decentralized and immutable nature of blockchain, this system enables a secure platform for casting and verifying votes digitally.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Features</h2>
+        <ul>
+            <li>End-to-end vote encryption and secure digital identity verification</li>
+            <li>Immutable ledger storing each vote as a blockchain transaction</li>
+            <li>Decentralized peer-to-peer network to prevent data tampering</li>
+            <li>Voter anonymity and transparency of results</li>
+            <li>Real-time results and auditability</li>
+            <li>User-friendly interface for voters and administrators</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Technologies Used</h2>
+        <ul>
+            <li>Blockchain Platform: Ethereum (Solidity Smart Contracts)</li>
+            <li>Frontend: React.js, HTML5, CSS3</li>
+            <li>Backend: Node.js, Express.js</li>
+            <li>Smart Contract Deployment: Truffle, Ganache</li>
+            <li>Wallet Integration: MetaMask</li>
+            <li>Database: IPFS and MongoDB for metadata</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Benefits</h2>
+        <ul>
+            <li>Prevents vote manipulation and duplication</li>
+            <li>Increases voter turnout with remote access</li>
+            <li>Enhances election security and confidence in results</li>
+            <li>Ensures transparency without compromising privacy</li>
+            <li>Reduces costs and logistics of traditional elections</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Use Cases</h2>
+        <ul>
+            <li>University student council elections</li>
+            <li>Corporate board voting and decision-making</li>
+            <li>Local body and municipal elections</li>
+            <li>NGO and cooperative society polling</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Future Scope</h2>
+        <p>
+            The project can be expanded for national-level elections using consortium blockchains with biometric integration.
+            Additional security features like zero-knowledge proofs, AI-based fraud detection, and multilingual interfaces can further increase usability.
+            Integration with Aadhaar and digital ID platforms is also being explored.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Team & Acknowledgement</h2>
+        <p>
+            This project was developed by final-year B.Tech CSE students: Rakesh Kumar, Anjali Singh, and Mohammed Irfan,
+            under the guidance of Dr. K. Ramesh, Associate Professor in Blockchain Systems.
+            The team thanks Malla Reddy University for providing technical mentorship and research support.
+        </p>
+    </div>
+</div>
+
+<footer>
+    &copy; 2025 MallaReddy University | Student Innovation & Research Cell
+</footer>
+
+</body>
+</html>

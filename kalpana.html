@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chancellor Profile | MallaReddy University</title>
+  <link rel="icon" type="image/png" href="https://cdn.adscientificindex.com/logos/13245.png">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #f1f3f5;
+      margin: 0;
+      padding: 2rem;
+      color: #333;
+    }
+    .profile-card {
+      background: #fff;
+      border-radius: 12px;
+      max-width: 320px;
+      margin: 0 auto;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .profile-card img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+    .profile-card h2 {
+      margin: .5rem 0;
+      font-size: 1.4rem;
+      color: #1d3557;
+    }
+    .view-btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      background: #1d3557;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .view-btn:hover {
+      background: #457b9d;
+    }
+    /* Modal overlay */
+    .modal-overlay {
+      position: fixed;
+      top:0; left:0; right:0; bottom:0;
+      background: rgba(0,0,0,0.4);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 100;
+    }
+    .modal {
+      background: #fff;
+      border-radius: 10px;
+      max-width: 600px;
+      width: 90%;
+      padding: 2rem;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      position: relative;
+    }
+    .modal h3 {
+      margin-top: 0;
+      color: #1d3557;
+    }
+    .close-btn {
+      position: absolute;
+      top: 1rem; right: 1rem;
+      background: none;
+      border: none;
+      font-size: 1.2rem;
+      cursor: pointer;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="profile-card">
+    <img src="https://static.wixstatic.com/media/6685d7_cf7223ca70be43c391198492d875a9db~mv2.jpg/v1/fill/w_194,h_254,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Chairman_Kalpana.jpg" alt="Smt. Ch. Kalpana, Chancellor">
+    <h2>Smt. Ch. Kalpana</h2>
+    <p><em>Chancellor, MallaReddy University, Hyderabad</em></p>
+    <button class="view-btn" onclick="toggleModal(true)">View Profile</button>
+  </div>
+
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <button class="close-btn" onclick="toggleModal(false)">✕</button>
+      <h3>About Chancellor Smt. Ch. Kalpana</h3>
+      <p><strong>Position:</strong> Chancellor, MallaReddy University, Hyderabad</p>
+      <p><strong>Role:</strong> As Chancellor, she plays a guiding role in ensuring academic excellence, upholding university stature, and shaping the institution's vision. She is a key member of the Advisory Body overseeing governance and strategic advancement of MRUH :contentReference[oaicite:5]{index=5}.</p>
+      <p><strong>Affiliation:</strong> Member of the Advisory Body along with Sri. Ch. Malla Reddy (Founder Chairman) and Dr. VSK Reddy (Vice‑Chancellor) :contentReference[oaicite:6]{index=6}.</p>
+      <p><strong>Location:</strong> MallaReddy University, Maisammaguda, Dulapally, Hyderabad – serving the Telangana region :contentReference[oaicite:7]{index=7}.</p>
+      <p>Her commitment to guiding the university is evident in events like the HR‑Conclave at T‑Hub, where she represented MRUH leadership alongside Sri. Ch. Malla Reddy and Dr. VSK Reddy :contentReference[oaicite:8]{index=8}.</p>
+    </div>
+  </div>
+
+  <script>
+    function toggleModal(show) {
+      document.getElementById('modalOverlay').style.display = show ? 'flex' : 'none';
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSE Faculty | MallaReddy University</title>
+  <link rel="icon" type="image/png" href="https://cdn.adscientificindex.com/logos/13245.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #f0f0f0;
+      padding: 0;
+    }
+
+    header {
+      background:linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      color:rgb(245, 242, 231);
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 5px;
+    }
+
+    .faculty-section {
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .faculty-section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+      color: #ffffff;
+      text-shadow: 1px 1px #000;
+    }
+
+    .faculty-card {
+      background-color: rgba(0, 0, 0, 0.4);
+      border-radius: 12px;
+      padding: 25px;
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s;
+    }
+
+    .faculty-card:hover {
+      transform: scale(1.02);
+    }
+
+    .faculty-name {
+      font-size: 1.8rem;
+      color:rgb(248, 246, 236);
+    }
+
+    .faculty-role {
+      font-weight: bold;
+      color: #e6e6e6;
+    }
+
+    .faculty-desc {
+      font-size: 1rem;
+      color: #dddddd;
+    }
+
+    .contact-link {
+      margin-top: 10px;
+      display: inline-block;
+      background-color: #ffcc00;
+      color: #000;
+      padding: 10px 18px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .contact-link:hover {
+      background-color: #e6b800;
+    }
+
+    footer {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      .faculty-name {
+        font-size: 1.5rem;
+      }
+
+      .faculty-card {
+        padding: 20px;
+      }
+    }
+    .logo {
+  width: 80px;
+  height: auto;
+  border-radius: 10px;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+  <div style="display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap;">
+    <img src="https://cdn.adscientificindex.com/logos/13245.png" alt="MallaReddy University Logo" class="logo">
+    <div>
+      <h1>MallaReddy University</h1>
+      <p>School of Science & Technology</p>
+    </div>
+  </div>
+ 
+  <section class="faculty-section">
+    <h2>Meet Our Esteemed Faculty</h2>
+
+    <div class="faculty-card">
+      <div class="faculty-name">Dr. Meeravali Shaikh</div>
+      <div class="faculty-role">Head of Department – CSE, Wireless Networks & AI Specialist</div>
+      <div class="faculty-desc">
+        With over 13 years of academic and research experience, Dr. Meeravali Shaikh heads the Computer Science & Engineering department at Mallareddy University. He holds a Ph.D. in CSE from Andhra University and has a strong foundation in Computer Networks, Wireless Sensor Networks, and Data Mining. Dr. Shaikh has guided numerous undergraduate and postgraduate projects and actively contributes to the curriculum innovation and research development within the department. His work focuses on the integration of AI and ML into communication systems, and he has been instrumental in fostering research-driven learning environments at the university.
+      </div>
+      <a href="meeravali.html" class="contact-link">View Dr. Meeravali Shaikh</a>
+    </div>
+
+    <div class="faculty-card">
+      <div class="faculty-name">Dr. P. Rambabu</div>
+      <div class="faculty-role">Professor – Remote Sensing & GIS Specialist</div>
+      <div class="faculty-desc">
+        With over 20 years of industry experience and 13 years in academia, Dr. P. Rambabu is a senior faculty member at Mallareddy University. He holds a Ph.D. in Remote Sensing, with earlier degrees in Civil Engineering and Geospatial Technologies. His career bridges both practical field applications and academic excellence. Dr. Rambabu specializes in GIS mapping, satellite data interpretation, and terrain evaluation techniques, and actively guides student research projects focused on environmental and infrastructure planning. His work connects engineering applications with geospatial science, supporting sustainable development and precision mapping strategies.
+      </div>
+      <a href="rambabu.html" class="contact-link">View Dr. P. Rambabu </a>
+    </div>
+
+    <div class="faculty-card">
+      <div class="faculty-name">Dr. Arun Singh Chouhan</div>
+      <div class="faculty-role">Associate Professor – Computer Vision, AI, and Cloud Computing Expert</div>
+      <div class="faculty-desc">
+        With 15 years of academic experience, Dr. Arun Singh Chouhan is a senior faculty member in the CSE department at Malla Reddy University. He earned his Ph.D. in Computer Vision from Jodhpur National University and has a strong background in artificial intelligence, cloud computing, and machine learning. Dr. Chouhan has previously served as HOD at Aurora’s Engineering College, Hyderabad, and currently guides postgraduate research while fostering industry-academic collaborations in intelligent systems and scalable AI solutions.
+      </div>
+      <a href="arun.html" class="contact-link">View Dr. Arun Singh Chouhan </a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 MallaReddy University | School of Science & Technology.
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MallaReddy University Admission Portal</title>
+  <link rel="icon" type="image/png" href="https://cdn.adscientificindex.com/logos/13245.png">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      width: 90%;
+      max-width: 600px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      position: relative;
+      overflow: hidden;
+    }
+
+    h2 {
+      text-align: center;
+      color: #003973;
+    }
+
+    .step {
+      display: none;
+      animation: fadeIn 0.6s ease-in-out;
+    }
+
+    .step.active {
+      display: block;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin: 12px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    button {
+      background-color: #003973;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #022b54;
+    }
+
+    .upload-info {
+      font-size: 0.9em;
+      color: #777;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    .success {
+      color: green;
+      font-weight: bold;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>MallaReddy University Admission</h2>
+    <div id="step1" class="step active">
+      <h3>Step 1: Registration</h3>
+      <input type="text" placeholder="Full Name" id="name" required>
+      <input type="email" placeholder="Email Address" id="email" required>
+      <select id="program">
+        <option value="">Select Program</option>
+        <option>B.Tech CSE</option>
+        <option>B.Tech ECE</option>
+        <option>BBA</option>
+        <option>MBA</option>
+        <option>Allied Health</option>
+        <option>Biotechnology</option>
+        <option>Aeronautical Engineering</option>
+      </select>
+      <button onclick="nextStep(2)">Next</button>
+    </div>
+
+    <div id="step2" class="step">
+      <h3>Step 2: Document Upload</h3>
+      <input type="file" accept="image/*,.pdf" multiple required>
+      <p class="upload-info">Upload certificates, ID proof, and passport photo.</p>
+      <button onclick="nextStep(3)">Next</button>
+    </div>
+
+    <div id="step3" class="step">
+      <h3>Step 3: Verification</h3>
+      <p>Our admissions team will verify your documents and eligibility within 2-3 working days.</p>
+      <button onclick="nextStep(4)">Proceed</button>
+    </div>
+
+    <div id="step4" class="step">
+      <h3>Step 4: Admission Offer</h3>
+      <p class="success">Congratulations! You will receive your admission offer via email shortly. Please proceed to fee payment once received.</p>
+      <button onclick="restartForm()">Start Over</button>
+    </div>
+  </div>
+
+  <script>
+    function nextStep(step) {
+      const steps = document.querySelectorAll('.step');
+      steps.forEach((s, index) => {
+        s.classList.remove('active');
+        if (index === step - 1) s.classList.add('active');
+      });
+    }
+
+    function restartForm() {
+      document.querySelectorAll('input').forEach(input => input.value = '');
+      document.getElementById('program').selectedIndex = 0;
+      nextStep(1);
+    }
+  </script>
+</body>
+</html>

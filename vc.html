@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vice‑Chancellor Profile | MallaReddy University</title>
+  <link rel="icon" type="image/png" href="https://cdn.adscientificindex.com/logos/13245.png">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #f1f3f5;
+      margin: 0;
+      padding: 2rem;
+      color: #333;
+      text-align: center;
+    }
+    .profile-card {
+      background: #fff;
+      border-radius: 12px;
+      max-width: 320px;
+      margin: auto;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .profile-card img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+    .profile-card h2 {
+      margin: .5rem 0;
+      font-size: 1.4rem;
+      color: #1d3557;
+    }
+    .view-btn {
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      background: #1d3557;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .view-btn:hover {
+      background: #457b9d;
+    }
+    .modal-overlay {
+      position: fixed;
+      top:0; left:0; right:0; bottom:0;
+      background: rgba(0,0,0,0.4);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 100;
+    }
+    .modal {
+      background: #fff;
+      border-radius: 10px;
+      max-width: 600px;
+      width: 90%;
+      padding: 2rem;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      position: relative;
+      text-align: left;
+      max-height: 80vh;
+      overflow-y: auto;
+    }
+    .modal h3 {
+      margin-top: 0;
+      color: #1d3557;
+    }
+    .close-btn {
+      position: absolute;
+      top: 1rem; right: 1rem;
+      background: none;
+      border: none;
+      font-size: 1.2rem;
+      cursor: pointer;
+      color: #999;
+    }
+    .modal p { margin-bottom: 1rem; }
+  </style>
+</head>
+<body>
+
+  <div class="profile-card">
+    <img src="https://static.wixstatic.com/media/6685d7_8ee91d59ca134fbbb3e2c93d1ad9a8f1~mv2.jpg/v1/fill/w_194,h_254,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/VSK_Reddy.jpg" alt="Dr. VSK Reddy">
+    <!-- Replace src with the official photo URL -->
+    <h2>Dr. VSK Reddy</h2>
+    <p><em>Vice‑Chancellor, MallaReddy University, Hyderabad</em></p>
+    <button class="view-btn" onclick="toggleModal(true)">View Profile</button>
+  </div>
+
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <button class="close-btn" onclick="toggleModal(false)">✕</button>
+      <h3>Dr. Vustikayala Siva Kumar Reddy (Dr. VSK Reddy)</h3>
+      <p><strong>Education:</strong> B.Tech (SVU), M.Tech (JNTUH), Ph.D. (IIT Kharagpur); Fellow of IETE, MIEEE, MISTE, MCSI.</p>
+      <p><strong>Experience:</strong> Over 29 years in teaching and industry combined. Held roles as Principal and Professor at Malla Reddy College of Engineering & Technology, and later appointed Vice‑Chancellor of Mallareddy University in 2020. :contentReference[oaicite:1]{index=1}</p>
+      <p><strong>Specializations:</strong> Signal Processing & Communications, Computer Science Engineering; versatile in multidisciplinary research. :contentReference[oaicite:2]{index=2}</p>
+      <p><strong>Publications & Research:</strong> Authored over 150 publications in international and national journals/conferences; over 500 citations. Editor for 10+ Scopus‑indexed Springer proceedings; fellow/member of IETE, ISTE, IEEE, CSI. :contentReference[oaicite:3]{index=3}</p>
+      <p><strong>Awards:</strong> “Best Teacher” for three consecutive years, “India Jewel Award”, “Global Intellectual Award‑2021”; British Council Education Fellowship to study UK education systems. :contentReference[oaicite:4]{index=4}</p>
+      <p><strong>Leadership & Roles:</strong> Former member, Board of Studies – JNTUH; visiting professor and keynote speaker at institutions in UK & Malaysia. Known for driving technology adoption and promoting a digital campus at MRU. :contentReference[oaicite:5]{index=5}</p>
+    </div>
+  </div>
+
+  <script>
+    function toggleModal(show) {
+      document.getElementById('modalOverlay').style.display = show ? 'flex' : 'none';
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MallaReddy University</title>
+  <link rel="icon" type="image/png" href="https://cdn.adscientificindex.com/logos/13245.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    nav {
+      background-color: #002244;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section h2 {
+      color: #003366;
+      margin-bottom: 20px;
+      font-size: 2rem;
+      border-left: 5px solid #0055a5;
+      padding-left: 10px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+
+    .card h3 {
+      color: #0055a5;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .footer-links {
+      margin: 15px 0;
+    }
+
+    .footer-links a {
+      color: #ccc;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+    @media screen and (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      nav { flex-direction: column; align-items: center; }
+    }
+    .logo {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+  </style>
+</head>
+<body>
+
+   <header>
+  <div style="display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap;">
+    <img src="https://cdn.adscientificindex.com/logos/13245.png" alt="MallaReddy University Logo" class="logo">
+    <div>
+      <h1>MallaReddy University</h1>
+      <p>School of Science & Technology</p>
+    </div>
+  </div>
+</header>
+  <nav>
+    
+    <a href="about.html">About</a>
+    <a href="faculty.html">Faculty</a>
+    <a href="research.html">Research</a>
+    <a href="contact.html">Contact</a>
+    <a href="facilities.html">Facilities</a>
+    <a href="admission.html">Admission & Fee Payment</a>
+  </nav>
+
+  <section class="section">
+    <h2>About Us</h2>
+    <p>"Inspiring Innovation, Empowering Leaders..."<br>MallaReddy University is dedicated to fostering a culture of academic excellence, innovation, and research-driven learning. With cutting-edge infrastructure, industry-aligned curriculum, and expert faculty, we nurture intellectual growth and practical skills. Our mission is to shape future tech leaders who drive global progress and positive change.</p>
+  </section>
+
+  <section class="section">
+    <h2>Leadership Team</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://static.wixstatic.com/media/6685d7_294b7edeee7e4ff0b6b915506dc2c9d4~mv2.jpg/v1/fill/w_194,h_254,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Malla%20Reddy_edited.jpg" alt="Sri. Ch. Malla Reddy">
+        <h3>Sri. Ch. Malla Reddy</h3>
+        <p>Founder Chairman</p><br>
+        <button type="click"><a href="chairman.html">View Profile</a></button>
+      </div>
+      <div class="card">
+        <img src="https://static.wixstatic.com/media/6685d7_cf7223ca70be43c391198492d875a9db~mv2.jpg/v1/fill/w_194,h_254,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Chairman_Kalpana.jpg" alt="Smt. Ch. Kalpana">
+        <h3>Smt. Ch. Kalpana</h3>
+        <p>Chancellor - MRUH</p><br>
+        <button type="click"><a href="kalpana.html">View Profile</a></button>
+      </div>
+      <div class="card">
+        <img src="https://static.wixstatic.com/media/6685d7_8ee91d59ca134fbbb3e2c93d1ad9a8f1~mv2.jpg/v1/fill/w_194,h_254,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/VSK_Reddy.jpg"alt="Dr.VSK Reddy">
+        <h3>Dr.VSK Reddy</h3>
+        <p>Vice Chancellor - MRUH</p><br>
+        <button type="click"><a href="vc.html">View Profile</a></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Research & Labs</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>AI & Robotics Lab</h3>
+        <p>Dedicated to building intelligent systems and robotics prototypes using Python, ROS, and TensorFlow.</p>
+      </div>
+      <div class="card">
+        <h3>Cybersecurity Center</h3>
+        <p>Focuses on ethical hacking, network defense, and secure systems design.</p>
+      </div>
+      <div class="card">
+        <h3>Cloud & DevOps Studio</h3>
+        <p>Cloud-native development, CI/CD pipelines, and container orchestration training using AWS & Docker.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Quick Links</h2>
+    <ul style="line-height: 1.8;">
+      <li><a href="course.html">Course Curriculum</a></li>
+      <li><a href="placement.html">Placement Cell</a></li>
+      <li><a href="recent2.html">Recent Publications</a></li>
+      <li><a href="project.html">Student Projects & Hackathons</a></li>
+      <li><a href="calender.html">Academic Calendar 2025</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Contact Us: mallareddyuniversity.ac.in | 094971 94971</p>
+    <div class="footer-links">
+      <a href="https://www.facebook.com/">Facebook</a> |
+      <a href="https://in.linkedin.com/">LinkedIn</a> |
+      <a href="https://x.com/i/flow/login">Twitter</a> |
+      <a href="https://www.youtube.com/">YouTube</a>
+    </div>
+    <button type="submit"><a href="login.html">Login for more details</a></button>
+    <p>&copy; 2025 MallaReddy University - School of Science & Technology. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

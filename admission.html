@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mallareddy University | Admissions & Fee Payment</title>
+  <link rel="icon" type="image/png" href="https://cdn.adscientificindex.com/logos/13245.png">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: #f8f9fa;
+      color: #212529;
+    }
+
+    header {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      background: #a8dadc;
+      padding: 3rem 2rem;
+      animation: fadeIn 1s ease;
+    }
+
+    .hero img {
+      max-width: 400px;
+      width: 100%;
+      border-radius: 12px;
+      margin: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .hero-text {
+      max-width: 500px;
+      margin: 1rem;
+    }
+
+    .hero-text h2 {
+      font-size: 2.5rem;
+      color: #1d3557;
+    }
+
+    .hero-text p {
+      font-size: 1rem;
+      margin-top: 1rem;
+    }
+
+    .section {
+      padding: 3rem 2rem;
+      background: white;
+    }
+
+    .section h3 {
+      text-align: center;
+      color: #1d3557;
+      margin-bottom: 2rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: #f1faee;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h4 {
+      color: #457b9d;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.7rem 1.5rem;
+      background: #1d3557;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+
+    .button:hover {
+      background: #457b9d;
+    }
+
+    footer {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 4rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+     <img src="https://cdn.adscientificindex.com/logos/13245.png" alt="MallaReddy University Logo" class="logo" width="100px">
+    <h1>Mallareddy University</h1>
+    <p>Admissions & Fee Payment Portal</p>
+  </header>
+
+  <section class="hero">
+    <img src="https://static.wixstatic.com/media/0c0246_4b07296b8f704381aed018b0b266028d~mv2.jpg/v1/fill/w_980,h_494,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/0c0246_4b07296b8f704381aed018b0b266028d~mv2.jpg" alt="Campus View" />
+    <!-- Replace the URL with your image path -->
+    <div class="hero-text">
+      <h2>Join a Future of Innovation</h2>
+      <p>Apply now to be part of Mallareddy University's thriving academic community. Pay your fees securely online.</p>
+      <a href="join.html" class="button">Start Admission</a>
+    </div>
+  </section>
+
+  <section class="section" id="admissions">
+    <h3>Admissions Process</h3>
+    <div class="cards">
+      <div class="card">
+        <h4>Step 1: Registration</h4>
+        <p>Fill out the online application form with your basic details and program selection.</p>
+      </div>
+      <div class="card">
+        <h4>Step 2: Document Upload</h4>
+        <p>Upload scanned copies of your certificates, ID proof, and passport-size photo.</p>
+      </div>
+      <div class="card">
+        <h4>Step 3: Verification</h4>
+        <p>Our admissions team will verify your documents and eligibility within 2-3 working days.</p>
+      </div>
+      <div class="card">
+        <h4>Step 4: Admission Offer</h4>
+        <p>Receive your admission offer via email and proceed to fee payment.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="payment">
+    <h3>Fee Payment Options</h3>
+    <div class="cards">
+      <div class="card">
+        <h4>Online Payment</h4>
+        <p>Pay using credit/debit card, UPI, or net banking via our secure payment gateway.</p>
+        <a href="pay.html" class="button">Pay Now</a>
+      </div>
+      <div class="card">
+        <h4>Bank Transfer</h4>
+        <p>Transfer fees directly to our university account. Use your application ID as reference.</p>
+        <a href="bank.html" class="button">View Details</a>
+      </div>
+      <div class="card">
+        <h4>EMI Option</h4>
+        <p>Pay your tuition in easy installments with our partnered financial providers.</p>
+        <a href="emi.html" class="button">Apply for EMI</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mallareddy University | All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
